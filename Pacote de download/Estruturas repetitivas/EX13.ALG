@@ -6,7 +6,7 @@ Algoritmo "EX12"
 
 var
 
-   num, aux, cont : inteiro
+   num, cont : inteiro
 
 Inicio
 

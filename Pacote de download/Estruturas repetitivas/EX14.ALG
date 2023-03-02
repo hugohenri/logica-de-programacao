@@ -9,8 +9,8 @@ Inicio
    fora <- 0
    escreva("Quanto numeros voce vai digitar?")
    leia(qtd)
-   cont <-0
-   enquanto qtd <> cont faca
+   
+   para cont de 1 ate qtd faca
      escreva("Digite um numero:")
      leia(num)
      se (num >= 10) e (num <= 20) entao
@@ -18,10 +18,9 @@ Inicio
      senao
        fora <- fora + 1
      fimse
+   fimpara
+   
 
-     cont <- cont +1
-
-   fimenquanto
    escreval("Dentro: ",dentro)
    escreval("Fora: ", fora)
 
