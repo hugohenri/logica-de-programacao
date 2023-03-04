@@ -2,10 +2,11 @@ Algoritmo "EX08"
 
 var
 
-   n, i, posicaoMaior: inteiro
+   n, i, soma, contPar: inteiro
+   media: real
 
-   vet: vetor[0..9] de real
-   soma, media: real
+   vet: vetor[0..9] de inteiro
+
 
 
 Inicio
@@ -25,27 +26,25 @@ Inicio
 
 
 
-   //Soma dos valores
+   //Somando pares
    soma<- 0
    para i de 0 ate n-1 faca
-   
-     soma <- soma + vet[i]
+     se vet[i]%2=0 entao
+       soma <- soma + vet[i]
+       contPar <- contPar + 1
 
-   fimpara
-
-   media <- soma / n
-     
-   escreval("Media do vetor: ", media:2:3)
-     
-   escreval("Valores abaixo da media:")
-   para i de 0 ate n-1 faca
-
-     se vet[i] < media entao
-       escreval(vet[i]:2:1)
      fimse
-
    fimpara
-   
+
+   se contPar = 0 entao
+     escreval("NENHUM NUMERO PAR!")
+   senao
+
+     media <- soma / contPar
+     
+     escreval("MEDIA DOS PARES = ", media)
+     
+   fimse
 
 
 Fimalgoritmo
