@@ -1,6 +1,9 @@
+//import java.util.Locale;
+
 public class App {
     public static void main(String[] args) throws Exception {
 
+       // Locale.setDefault(Locale.US); usado para que a searação das casas decimais seja um ponto
         int idade;
         double salario, altura;
         char genero;
