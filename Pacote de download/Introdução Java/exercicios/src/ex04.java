@@ -4,32 +4,35 @@ public class ex04 {
     public static void main(String[] args) {
         
         Scanner sc = new Scanner(System.in);
-        int a, b, c, menor;
-
-        System.out.print("Primeiro numero: ");
+        int a, b;
+        System.out.println("Digite dois numeros:");
         a = sc.nextInt();
-        System.out.print("Segundo numero: ");
         b = sc.nextInt();
-        System.out.print("Terceiro numero: ");
-        c = sc.nextInt();
-
         
-        if (a < b && a < c) {
-            menor = a;
-            
-        } else {if (b < c) {
-            menor = b;
-            
-        } else {
-            menor = c;
-            
-        }
-            
-        }
 
-        System.out.print("Menor: " + menor);
+        while (a != b) {
+                        
             
-        sc.close();
+            if (a < b) {
+                System.out.println("Crescente!");
+                
+            } else {
+                System.out.println("Decrescente!");
+            }
+            System.out.println("Digite outros dois numeros:");
+            a=sc.nextInt();
+            b=sc.nextInt();
+                
+            } 
+            
+            System.out.println("Iguais!");
+            sc.close();
+                  
+        }
+         
+        
+           
+        
 
     }
-}
+
